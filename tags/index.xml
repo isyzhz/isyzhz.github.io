@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on yizhi</title>
-    <link>http://isyzhz.github.io/tags/</link>
+    <link>https://isyzhz.github.io/tags/</link>
     <description>Recent content in Tags on yizhi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <copyright>[@Bootstrap](https://github.com/alanorth/hugo-theme-bootstrap4-blog) theme on Hugo</copyright><atom:link href="http://isyzhz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>[@Bootstrap](https://github.com/alanorth/hugo-theme-bootstrap4-blog) theme on Hugo</copyright><atom:link href="https://isyzhz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
