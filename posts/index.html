@@ -10,7 +10,7 @@
 <meta property="og:description" content="isyzhz [at] gmail [dot] com" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://isyzhz.github.io/posts/" />
-<meta property="og:updated_time" content="2022-08-17T09:48:36+08:00" />
+<meta property="og:updated_time" content="2022-08-29T20:57:10+08:00" />
 
 
 
@@ -20,18 +20,20 @@
 <meta name="generator" content="Hugo 0.101.0" />
 
 
+
+
     
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Blog",
-  "headline": "yizhi",
+  "headline": "Zhiyi Zhao(赵知易)",
   "url" : "https://isyzhz.github.io/posts/",
   "author": {
     "@type": "Person",
-    "name": "zhiyi"
+    "name": "Zhiyi"
   },
-  "dateModified": "2022-08-17T09:48:36+08:00",
+  "dateModified": "2022-08-29T20:57:10+08:00",
   "keywords": "",
   "description":"isyzhz [at] gmail [dot] com"
 }
@@ -40,7 +42,7 @@
 
     <link rel="canonical" href="https://isyzhz.github.io/posts/">
 
-    <title>yizhi</title>
+    <title>Zhiyi Zhao(赵知易)</title>
 
     
     <!-- combined, minified CSS -->
@@ -53,11 +55,10 @@
     <script defer src="https://isyzhz.github.io/js/fontawesome.min.f5072c55a0721857184db93a50561d7dc13975b4de2e19db7f81eb5f3fa57270.js" integrity="sha256-9QcsVaByGFcYTbk6UFYdfcE5dbTeLhnbf4HrXz&#43;lcnA=" crossorigin="anonymous"></script>
 
     <!-- RSS 2.0 feed -->
-    <link rel="alternate" type="application/rss+xml" href="https://isyzhz.github.io/posts/index.xml" title="yizhi" />
+    <link rel="alternate" type="application/rss+xml" href="https://isyzhz.github.io/posts/index.xml" title="Zhiyi Zhao(赵知易)" />
     
 
     
-
   </head>
 
   <body>
@@ -82,7 +83,7 @@
     
     <header class="blog-header">
       <div class="container">
-        <h1 class="blog-title" dir="auto"><a href="https://isyzhz.github.io/" rel="home">yizhi</a></h1>
+        <h1 class="blog-title" dir="auto"><a href="https://isyzhz.github.io/" rel="home">Zhiyi Zhao(赵知易)</a></h1>
         <p class="lead blog-description" dir="auto">isyzhz [at] gmail [dot] com</p>
       </div>
     </header>
@@ -104,11 +105,44 @@
 
 <article class="blog-post">
   <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://isyzhz.github.io/2022/08/derivation-of-plow-flow-equation/">Derivation of Plow Flow Equation</a></h2>
+    <p class="blog-post-meta"><time datetime="2022-08-29T20:57:10+08:00">Mon Aug 29, 2022</time> by Zhiyi</p>
+  </header>
+  Intro Note that since the source is grounded, there is also a current flowing through bus to ground, which results in admittance matrix.
+Ohms Law DC Circuits: $V = IR$
+AC Circuits: $\bar{V} = \bar{I}\bar{R} $
+$\rightarrow$ $\bar{I} = \bar{Y} \bar{V} $
+where, $\bar{Y} = \frac{1}{\bar{Z}}$
+AC Network: $[I]{n*1} = [Y{bus}]{n*n} [V]{n*1}$
+  <a href='https://isyzhz.github.io/2022/08/derivation-of-plow-flow-equation/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://isyzhz.github.io/2022/08/newton-raphon-method/">Newton-Raphon Method</a></h2>
+    <p class="blog-post-meta"><time datetime="2022-08-29T20:57:07+08:00">Mon Aug 29, 2022</time> by Zhiyi</p>
+  </header>
+  Introduction Newton-Raphson Method is a must for every power engineer to write down the equation for a NR 3-Bus, 3 unknown system. This is once-in-a-life-time activity. Topology and Parameter Generating bus on 1-bus and 3-bus. power demand: $S_{L}$ Objective Gvien data on 3-bus system, determine unknown states of system NR Method.
+  <a href='https://isyzhz.github.io/2022/08/newton-raphon-method/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
     <h2 class="blog-post-title" dir="auto"><a href="https://isyzhz.github.io/2022/08/hugo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">Hugo使用教程</a></h2>
     <p class="blog-post-meta"><time datetime="2022-08-17T09:48:36+08:00">Wed Aug 17, 2022</time> by zhiyi</p>
   </header>
   
-创建博客 hugo new page/blog.md 上传Github hugo --theme=hugo-theme-bootstrap4-blog --baseUrl=&#34;https://isyzhz.github.io/&#34; --buildDrafts cd public git init git add . git commit -m &#39;comment&#39; git remote add origin https://github.com/isyzhz/isyzhz.github.io.git git push -u origin master 
+创建博客 hugo new posts/blog.md 上传到Github仓库 hugo --theme=hugo-theme-bootstrap4-blog --baseUrl=&#34;https://isyzhz.github.io/&#34; --buildDrafts cd public git init git add . git commit -m &#39;comment&#39; git remote add origin https://github.com/isyzhz/isyzhz.github.io.git git push -u origin master 
   <a href='https://isyzhz.github.io/2022/08/hugo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/'>Read more →</a>
 </article> 
 
@@ -129,6 +163,10 @@
     <h4>Recent Posts</h4>
     <ol class="list-unstyled">
 
+
+<li><a href="/2022/08/derivation-of-plow-flow-equation/">Derivation of Plow Flow Equation</a></li>
+
+<li><a href="/2022/08/newton-raphon-method/">Newton-Raphon Method</a></li>
 
 <li><a href="/2022/08/hugo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">Hugo使用教程</a></li>
 

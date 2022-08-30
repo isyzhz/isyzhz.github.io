@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<meta property="og:title" content="Newton-Raphon Method" />
+<meta property="og:description" content="Introduction Newton-Raphson Method is a must for every power engineer to write down the equation for a NR 3-Bus, 3 unknown system. This is once-in-a-life-time activity. Topology and Parameter Generating bus on 1-bus and 3-bus. power demand: $S_{L}$ Objective Gvien data on 3-bus system, determine unknown states of system NR Method." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://isyzhz.github.io/2022/08/newton-raphon-method/" />
+<meta property="article:published_time" content="2022-08-29T20:57:07+08:00" />
+<meta property="article:modified_time" content="2022-08-29T20:57:07+08:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Newton-Raphon Method"/>
+<meta name="twitter:description" content="Introduction Newton-Raphson Method is a must for every power engineer to write down the equation for a NR 3-Bus, 3 unknown system. This is once-in-a-life-time activity. Topology and Parameter Generating bus on 1-bus and 3-bus. power demand: $S_{L}$ Objective Gvien data on 3-bus system, determine unknown states of system NR Method."/>
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Newton-Raphon Method",
+  "url": "https://isyzhz.github.io/2022/08/newton-raphon-method/",
+  "wordCount": "217",
+  "datePublished": "2022-08-29T20:57:07+08:00",
+  "dateModified": "2022-08-29T20:57:07+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "Zhiyi"
+  }
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://isyzhz.github.io/2022/08/newton-raphon-method/">
+
+    <title>Newton-Raphon Method | Zhiyi Zhao(赵知易)</title>
+
+    
+    <!-- combined, minified CSS -->
+    
+    <link href="https://isyzhz.github.io/css/style.c6ba80bc50669557645abe05f86b73cc5af84408ed20f1551a267bc19ece8228.css" rel="stylesheet" integrity="sha256-xrqAvFBmlVdkWr4F&#43;GtzzFr4RAjtIPFVGiZ7wZ7Ogig=" crossorigin="anonymous">
+    
+
+    <!-- minified Font Awesome for SVG icons -->
+    
+    <script defer src="https://isyzhz.github.io/js/fontawesome.min.f5072c55a0721857184db93a50561d7dc13975b4de2e19db7f81eb5f3fa57270.js" integrity="sha256-9QcsVaByGFcYTbk6UFYdfcE5dbTeLhnbf4HrXz&#43;lcnA=" crossorigin="anonymous"></script>
+
+    <!-- RSS 2.0 feed -->
+    
+
+    
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://isyzhz.github.io/">Home</a>
+          
+          <a class="nav-link" href="/about/" title="About">About</a>
+          
+          
+          <a class="nav-link" href="/contact/" title="Contact">Contact</a>
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="https://isyzhz.github.io/" rel="home">Zhiyi Zhao(赵知易)</a></h1>
+        <p class="lead blog-description" dir="auto">isyzhz [at] gmail [dot] com</p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://isyzhz.github.io/2022/08/newton-raphon-method/">Newton-Raphon Method</a></h2>
+    <p class="blog-post-meta">
+<time datetime="2022-08-29T20:57:07+08:00">Mon Aug 29, 2022</time>
+</p>
+  </header>
+  <h1 id="introduction">Introduction</h1>
+<ol>
+<li><strong>Newton-Raphson Method</strong> is a must for every power engineer to write down the equation for a NR 3-Bus, 3 unknown system.</li>
+<li>This is once-in-a-life-time activity.</li>
+</ol>
+<h1 id="topology-and-parameter">Topology and Parameter</h1>
+<p><img src="https://github.com/isyzhz/ImageBed-for-Markdown/blob/main/Example_for_NR.jpg?raw=true" alt="example"></p>
+<ul>
+<li>Generating bus on 1-bus and 3-bus.</li>
+<li>power demand: $S_{L}$</li>
+</ul>
+<h1 id="objective">Objective</h1>
+<ul>
+<li>Gvien data on 3-bus system, determine unknown states of system NR Method.</li>
+</ul>
+<h1 id="solution">Solution</h1>
+<h2 id="step-1">Step 1</h2>
+<p>known states = [$\delta_{1}$ $V_{1}$ $V_{3}$ ]</p>
+<p>unknown states = [$\delta_{2}$ $\delta_{3}$ $V_{2}$]</p>
+<hr>
+<p>为什么选择下面三个式子？</p>
+<hr>
+<p>corresponding PowerFlow equation:
+[$P_{2}$ $P_{3}$ $Q_{2}$]</p>
+<h2 id="step-2">Step 2</h2>
+<p>Build Y-bus</p>
+<p>$y_{12} = -j10$</p>
+<p>$y_{23} = -j5$</p>
+<p>$y_{13} = -j4$</p>
+<p><img src="https://github.com/isyzhz/ImageBed-for-Markdown/blob/main/Y-bus.jpg?raw=true" alt="Y-bus"></p>
+<p>*theta represents imaginary part of y.</p>
+<h2 id="step-3">Step 3</h2>
+<p>According to <strong>Newton-Raphson Load flow</strong> :</p>
+<p>$P_{k} = \sum_{i=1}^{n}\left | Y_{ki}V_{i}V_{k} \right |cos(\theta_{ki}+\delta_{i}-\delta_{k})$</p>
+<p>$Q_{k} = -\sum_{i=1}^{n}\left | Y_{ki}V_{i}V_{k} \right |sin(\theta_{ki}+\delta_{i}-\delta_{k})$</p>
+<p>We have:</p>
+<p>$f_{p2} = \left | Y_{21}V_{1}V_{2} \right |cos(\theta_{21}+\delta_{1}-\delta_{2}) + \left | Y_{22}V_{2}V_{2} \right | cos(\theta_{22})+
+\
+\left |Y_{23}V_{3}V_{2} \right | cos(\theta_{23}+\delta_{3}-\delta_{2}) - P_{2} = 0 $</p>
+<p>$f_{p3} = \left | Y_{31}V_{1}V_{2} \right |cos(\theta_{31}+\delta_{1}-\delta_{3}) + \left | Y_{32}V_{2}V_{3} \right | cos(\theta_{32}+\delta_{2}-\delta_{3})+ \left |Y_{33}(V_{3})^{2} \right | cos(\theta_{33}) - P_{3} = 0$</p>
+<p>$f_{Q2} = -\left | Y_{21}V_{1}V_{2} \right |sin(\theta_{21}+\delta_{1}-\delta_{2}) - \left | Y_{22}(V_{2})^2 \right | sin(\theta_{22}) - \ \left |Y_{23}V_{3}V_{2} \right | sin(\theta_{23} + \delta_{3}-\delta_{2}) - Q_{2} = 0$</p>
+<h2 id="step-4">Step 4</h2>
+<p>Write <strong>Jacobian matrix</strong></p>
+<hr>
+<p>雅可比行列式的纯数推导：</p>
+<p><a href="https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/jacobian/v/the-jacobian-matrix">Zhihu</a></p>
+<p><a href="https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/jacobian/v/the-jacobian-matrix">Khan Academy</a></p>
+<hr>
+<p><img src="https://github.com/isyzhz/ImageBed-for-Markdown/blob/main/Jocobian.jpg?raw=true" alt="Jocobian"></p>
+<h1 id="step-5">Step 5</h1>
+<p><strong>Newton Raphson iteration</strong></p>
+<p><img src="https://github.com/isyzhz/ImageBed-for-Markdown/blob/main/equation.jpg?raw=true" alt="Jocobian"></p>
+<ul>
+<li>注: 尚未解决Render后公式无法换行的问题，所以贴个张图片。</li>
+</ul>
+<!-- raw HTML omitted -->
+<h1 id="matlab-code">Matlab Code</h1>
+<p><a href="https://github.com/isyzhz/Application-of-Newton-Raphson-Method-on-Power-System">https://github.com/isyzhz/Application-of-Newton-Raphson-Method-on-Power-System</a></p>
+<h1 id="reference">Reference</h1>
+<p><a href="https://www.youtube.com/watch?v=Nafpo0Sy3GI">Newton Raphson Load Flow Solution</a></p>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+    <section>
+    <h4>Share</h4>
+    <nav class="nav sharing-icons">
+      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fisyzhz.github.io%2f2022%2f08%2fnewton-raphon-method%2f" title="Share on Facebook"><span class="fab fa-facebook-f fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fisyzhz.github.io%2f2022%2f08%2fnewton-raphon-method%2f" title="Share on LinkedIn"><span class="fab fa-linkedin-in fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fisyzhz.github.io%2f2022%2f08%2fnewton-raphon-method%2f&amp;text=Newton-Raphon%20Method" title="Tweet this"><span class="fab fa-twitter fa-2x"></span></a>
+    </nav>
+  </section>
+
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<html>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+</html>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+           extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    }
+  });
+  </script>
+  
+
+
+  
+  
+
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/2022/08/derivation-of-plow-flow-equation/">Derivation of Plow Flow Equation</a></li>
+
+<li><a href="/2022/08/newton-raphon-method/">Newton-Raphon Method</a></li>
+
+<li><a href="/2022/08/hugo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">Hugo使用教程</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="https://example.com">Link 1</a></li>
+      
+      <li><a href="https://example.org">Link 2</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      <a href="https://github.com/alanorth/hugo-theme-bootstrap4-blog">@Bootstrap</a> theme on Hugo
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

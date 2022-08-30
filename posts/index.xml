@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on yizhi</title>
+    <title>Posts on Zhiyi Zhao(赵知易)</title>
     <link>https://isyzhz.github.io/posts/</link>
-    <description>Recent content in Posts on yizhi</description>
+    <description>Recent content in Posts on Zhiyi Zhao(赵知易)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>[@Bootstrap](https://github.com/alanorth/hugo-theme-bootstrap4-blog) theme on Hugo</copyright>
-    <lastBuildDate>Wed, 17 Aug 2022 09:48:36 +0800</lastBuildDate><atom:link href="https://isyzhz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Aug 2022 20:57:10 +0800</lastBuildDate><atom:link href="https://isyzhz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Derivation of Plow Flow Equation</title>
+      <link>https://isyzhz.github.io/2022/08/derivation-of-plow-flow-equation/</link>
+      <pubDate>Mon, 29 Aug 2022 20:57:10 +0800</pubDate>
+      
+      <guid>https://isyzhz.github.io/2022/08/derivation-of-plow-flow-equation/</guid>
+      <description>Intro Note that since the source is grounded, there is also a current flowing through bus to ground, which results in admittance matrix.
+Ohms Law DC Circuits: $V = IR$
+AC Circuits: $\bar{V} = \bar{I}\bar{R} $
+$\rightarrow$ $\bar{I} = \bar{Y} \bar{V} $
+where, $\bar{Y} = \frac{1}{\bar{Z}}$
+AC Network: $[I]{n*1} = [Y{bus}]{n*n} [V]{n*1}$</description>
+    </item>
+    
+    <item>
+      <title>Newton-Raphon Method</title>
+      <link>https://isyzhz.github.io/2022/08/newton-raphon-method/</link>
+      <pubDate>Mon, 29 Aug 2022 20:57:07 +0800</pubDate>
+      
+      <guid>https://isyzhz.github.io/2022/08/newton-raphon-method/</guid>
+      <description>Introduction Newton-Raphson Method is a must for every power engineer to write down the equation for a NR 3-Bus, 3 unknown system. This is once-in-a-life-time activity. Topology and Parameter Generating bus on 1-bus and 3-bus. power demand: $S_{L}$ Objective Gvien data on 3-bus system, determine unknown states of system NR Method.</description>
+    </item>
+    
     <item>
       <title>Hugo使用教程</title>
       <link>https://isyzhz.github.io/2022/08/hugo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
@@ -15,7 +38,7 @@
       
       <guid>https://isyzhz.github.io/2022/08/hugo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
       <description>
-创建博客 hugo new page/blog.md 上传Github hugo --theme=hugo-theme-bootstrap4-blog --baseUrl=&amp;#34;https://isyzhz.github.io/&amp;#34; --buildDrafts cd public git init git add . git commit -m &amp;#39;comment&amp;#39; git remote add origin https://github.com/isyzhz/isyzhz.github.io.git git push -u origin master </description>
+创建博客 hugo new posts/blog.md 上传到Github仓库 hugo --theme=hugo-theme-bootstrap4-blog --baseUrl=&amp;#34;https://isyzhz.github.io/&amp;#34; --buildDrafts cd public git init git add . git commit -m &amp;#39;comment&amp;#39; git remote add origin https://github.com/isyzhz/isyzhz.github.io.git git push -u origin master </description>
     </item>
     
   </channel>
