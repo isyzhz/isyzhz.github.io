@@ -1,14 +1,19 @@
 ---
 layout: post
-title:  "HelloĞÂÒ»ÆªÎÄÕÂ"
-date:   2023-04-13 22:21:59 +00:00
+title:  "æ ‡é¢˜"
+date:   2023-04-01 22:21:59 +00:00
 image: /images/jcdl2019.png
 categories: research
-author: "ÎÒ×Ô¼º"
-authors: "<strong>×Ô¼º</strong>"
+author: "æˆ‘è‡ªå·±"
+authors: "<strong>è‡ªå·±</strong>"
 venue: "ACM/IEEE Joint Conference on Digital Libraries"
 arxiv: https://arxiv.org/abs/1904.12573
 slides: /pdfs/jcdl2019.pdf
 code: https://github.com/leonidk/venue_scores
 ---
-ĞÂÎÄÕÂ
+
+## æ ‡é¢˜
+ç¬¬ä¸€ç¯‡æ–‡ç« 
+
+## æ³¨æ„äº‹é¡¹
+1. æ—¶é—´æ—¥æœŸä¸èƒ½è¶…è¿‡å½“å‰æ—¶é—´
