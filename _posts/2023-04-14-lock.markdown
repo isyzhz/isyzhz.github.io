@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Design of Smart Access Control System Based on RFID and Bluetooth Technology"
+title:  "Smart Access Control System Based on RFID and Bluetooth Technology"
 date:   2023-04-11 22:21:59 +00:00
 image: /images/lock.jpg
 categories: Projects
 author: "Zhiyi Zhao"
 keywords: "Key words: Smart Access Control System, RFID, Bluetooth"
-slides: /pdfs/lock.pdf
+pdf: /pdfs/lock.pdf
+time: "05/2022 - 07/2022"
 ---

@@ -7,5 +7,5 @@ categories: Projects
 author: "Zhiyi Zhao"
 keywords: "Key words: Solar panel monitoring, NB-IoT network"
 pdf: /pdfs/IoT.pdf
-time: "04/2023"
+time: "03/2022 - 05/2022"
 ---
