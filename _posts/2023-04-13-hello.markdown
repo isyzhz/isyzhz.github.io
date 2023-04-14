@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "title"
+title:  "Power Systems Analysis"
 date:   2023-04-01 22:21:59 +00:00
 image: /images/jcdl2019.png
-categories: research
+categories: Publication
 author: "Zhiyi Zhao"
-subtitle: "Smart Grid"
+subtitle: "Samrt Grid"
 venue: "IEEE Transactions"
 authors: "<strong>Zhiyi Zhao</strong>, Wang Zhang"
 arxiv: https://arxiv.org/abs/1904.12573
@@ -13,25 +13,3 @@ slides: /pdfs/jcdl2019.pdf
 code: https://github.com/leonidk/venue_scores
 ---
 
-## 标题
-第一篇文章
-
-## 注意事项
-1. 时间日期不能超过当前时间
-2. 文章格式参照其他已经存在的
-
-## 新增文章
-在`_posts`目录下新建一个跟其他格式一样的，最好就是直接复制粘贴改名字
-图片放在images目录下面，引用图片用markdown格式:
-```md
-![提示信息](/images/musk.jpg)
-```
-![这是一张图片](/images/musk.jpg)
-
-## 发布
-```shell
-git add . # 暂存所有改动
-git commit -m 'u' # 提交
-git push # 推送到github上去
-```
-然后github action会自动编译部署，等待编译完成后既可刷新页面
