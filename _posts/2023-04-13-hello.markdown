@@ -1,15 +1,14 @@
 ---
 layout: post
-title:  "Power Systems Analysis"
+title:  "IoT-based Off-grid Solar Panel Monitoring System"
 date:   2023-04-01 22:21:59 +00:00
-image: /images/jcdl2019.png
-categories: Publication
+image: /images/dashboard.png
+categories: Projects
 author: "Zhiyi Zhao"
-subtitle: "Samrt Grid"
+subtitle: "Key words: Solar panel monitoring, NB-IoT network"
 venue: "IEEE Transactions"
-authors: "<strong>Zhiyi Zhao</strong>, Wang Zhang"
 arxiv: https://arxiv.org/abs/1904.12573
-slides: /pdfs/jcdl2019.pdf
+slides: /pdfs/IoT.pdf
 code: https://github.com/leonidk/venue_scores
 ---
 
