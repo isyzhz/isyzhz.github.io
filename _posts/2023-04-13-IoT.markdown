@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "IoT-based Off-grid Solar Panel Monitoring System"
+date:   2023-04-01 22:21:59 +00:00
+image: /images/dashboard.png
+categories: Projects
+author: "Zhiyi Zhao"
+keywords: "Key words: Solar panel monitoring, NB-IoT network"
+pdf: /pdfs/IoT.pdf
+time: "04/2023"
+---
