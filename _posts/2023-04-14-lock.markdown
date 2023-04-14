@@ -7,5 +7,5 @@ categories: Projects
 author: "Zhiyi Zhao"
 keywords: "Key words: Smart Access Control System, RFID, Bluetooth"
 pdf: /pdfs/lock.pdf
-time: "05/2022 - 07/2022"
+time: "04/2022"
 ---
