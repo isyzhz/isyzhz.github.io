@@ -71,6 +71,7 @@
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
+
               {% if post.arxiv %}
               <a href="{{post.arxiv}}">arxiv</a> /
               {% endif %}
@@ -119,9 +120,6 @@
               <br>
               <em>{{post.keywords}}</em>
               <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
               {% if post.website %}
               <a href="{{post.website}}">website</a> /
               {% endif %}
@@ -163,6 +161,8 @@
         <br>
         <br>
         <br>
+
+      <!-- Other Paragraph -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
