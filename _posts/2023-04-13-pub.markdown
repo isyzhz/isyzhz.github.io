@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Novel Estimation Method for Maximum PV Hosting Capacity in Radial Distribution Networks using Bus Voltage and Electrical Distance (2022.7-2022.11)"
+title:  "A Novel Estimation Method for Maximum PV Hosting Capacity in Radial Distribution Networks using Bus Voltage and Electrical Distance"
 date:   2023-4-12 22:21:59 +00:00
 image: /images/paper1.jpg
 categories: Publication
