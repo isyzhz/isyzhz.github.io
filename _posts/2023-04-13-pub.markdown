@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Incoming Paper"
+title:  "A Novel Estimation Method for Maximum PV Hosting Capacity in Radial Distribution Networks using Bus Voltage and Electrical Distance"
 date:   2023-4-12 22:21:59 +00:00
-image: /images/ieee.png
+image: /images/paper1.jpg
 categories: Publication
 author: "Zhiyi Zhao"
-authors: "<strong>First Author</strong>, Second Author"
+authors: "<strong>Zhiyi Zhao</strong>, Conghuan Yang, Ying Xue, Zhaoxi Liu, Weiye Zheng"
 journal: "Journal Name"
-arxiv: https://arxiv.org/
+slides: /pdfs/PHC-estimation.pdf
 ---
