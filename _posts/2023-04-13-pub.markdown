@@ -6,6 +6,6 @@ image: /images/paper1.jpg
 categories: Publication
 author: "Zhiyi Zhao"
 authors: "<strong>Zhiyi Zhao</strong>, Conghuan Yang, Ying Xue, Zhaoxi Liu, Weiye Zheng"
-journal: "Electric Power Systems Research, Under Review"
+journal: "Electric Power Systems Research, Accepted"
 slides: /pdfs/PHC-estimation.pdf
 ---
