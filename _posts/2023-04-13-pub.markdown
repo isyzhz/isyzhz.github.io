@@ -8,5 +8,5 @@ author: "Zhiyi Zhao"
 authors: "<strong>Zhiyi Zhao</strong>, Ying Xue, Zhaoxi Liu, Weiye Zheng, Shuyin Duan, Lei Yu"
 journal: "Electric Power Systems Research, Accepted"
 slides: /pdfs/PHC-estimation.pdf
-arxir: https://www.sciencedirect.com/science/article/abs/pii/S0378779623006806
+link: https://www.sciencedirect.com/science/article/abs/pii/S0378779623006806
 ---
