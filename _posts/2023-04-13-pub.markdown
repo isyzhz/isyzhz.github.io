@@ -7,6 +7,6 @@ categories: Publication
 author: "Zhiyi Zhao"
 authors: "<strong>Zhiyi Zhao</strong>, Ying Xue, Zhaoxi Liu, Weiye Zheng, Shuyin Duan, Lei Yu"
 journal: "Electric Power Systems Research"
-slides: /pdfs/PHC-estimation.pdf
+# slides: /pdfs/PHC-estimation.pdf
 link: https://www.sciencedirect.com/science/article/abs/pii/S0378779623006806
 ---
